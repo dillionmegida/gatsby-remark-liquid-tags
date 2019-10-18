@@ -1,9 +1,19 @@
-// Codepen embed
-let getCodepen = (url, options) => {
-	let penDetails = url.replace('https://codepen.io/', '');
+module.exports = getCodepen = (url, options) => {
+
+	let penDetails;
+	let host;
+
+	if(url.startsWith('https://www.codepen.io/')
+		host = 'https://www.codepen.io/';
+	else if(url.startsWith('https://codepen.io/'))
+		host = 'https://codepen.io/'
+	
+	penDetails = url.replace(host, '');
+
 	penDetails = penDetails.replace('/pen/', ' ');
 
 	let penDetailsArr = penDetails.split('');
+
 	let penOwnerArr = [];
 
 	for(let i =0; i < penDetailsArr.length; i++) {
@@ -16,7 +26,7 @@ let getCodepen = (url, options) => {
 
 	let penOwner = penOwnerArr.join('');
 
-	for(let i = 0; i <= penOwnerArr.length; i ++) {
+	for(let i = 0; i <= penOwnerOwnerArr.length; i ++) {
 		penDetailsArr.shift();
 	}
 
@@ -34,7 +44,3 @@ let getCodepen = (url, options) => {
 
 	`);
 }
-
-module.exports = {
-	getCodepen
-};

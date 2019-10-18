@@ -1,12 +1,13 @@
-// Local imports
-const commonFunctions = require('./functions/common');
-const embeds = require('./functions/embed');
-
 const visit = require("unist-util-visit")
 const toString = require("mdast-util-to-string")
 
+const commonFunctions = require('./functions/common');
+
+const getCodepen = require('./embeds/codepen');
+const getTwitter = require('./embeds/twitter');
+const getTwitter = require('./embeds/youtube');
+
 let { breakLiquidTag } = commonFunctions;
-let { getCodepen } = embeds;
 
 module.exports = ({ markdownAST }, pluginOptions) => {
   visit(markdownAST, "paragraph", node => {
@@ -27,11 +28,19 @@ module.exports = ({ markdownAST }, pluginOptions) => {
 
         // check the tagname to know which embed is to be used
         switch(tagName) {
-          case 'codepen':
-            embed = getCodepen(tagUrl, tagOpt);
-            break;
-          default:
-            return;
+            case 'codepen':
+                embed = getCodepen(tagUrl, tagOpt);
+                break;
+            case 'twitter':
+                embed = getTwitter(tagUrl);
+                break;
+            case 'youtube':
+                embed = getYoutube(tagUrl);
+                break;
+            // case 'github':
+            //     embed = getYoutube(tagUrl);
+            default:
+                return;
         }
 
         node.type = "html"

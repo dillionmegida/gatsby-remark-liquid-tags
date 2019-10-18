@@ -1,16 +1,24 @@
 {
 	"name": "gatsby-remark-liquid-tags",
-	"description": "A template plugin for custom embeds e.g codepens, etc",
-	"author": "Dillion Megida <dillionmegida@gmail.com>",
-	"main": "index.js",
-	"version": "1.0.0",
+	"description": "A template plugin for custom embeds of services by url",
+	"main": "./src/index.js",
+	"version": "1.0.2",
 	"keywords": [
 		"gatsby",
 		"gatsby-plugin",
 		"liquid-tags",
-		"gatsby-liquid-tags"
+		"gatsby-liquid-tags",
+		"embed",
+		"codepen"
 	],
+	"author": "Dillion Megida - <dillionmegida@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dillionmegida/gatsby-remark-liquid-tags"
+	},
+	"homepage": "https://github.com/dillionmegida/gatsby-remark-liquid-tags#readme",
 	"dependencies": {
-		"unist-util-visit": "^2.0.0"	
+		"node-fetch": "^2.6.0",
+		"unist-util-visit": "^2.0.0"
 	}
 }
