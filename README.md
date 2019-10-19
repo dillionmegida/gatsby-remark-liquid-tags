@@ -30,7 +30,6 @@ The embed-options argument is optional. It is only used in codepens for setting 
 Example:
 ```markdown
 Check out this pen {% codepen https://codepen.io/Dillion/pen/bGGeZON tab=result %}
-
 Watch this video {% youtube WoPI_7fnKlM %}
 ```
 
