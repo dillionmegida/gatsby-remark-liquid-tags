@@ -3,10 +3,10 @@ module.exports = getCodepen = (url, options) => {
 	let penDetails;
 	let host;
 
-	if(url.startsWith('https://www.codepen.io/')
+	if(url.startsWith('https://www.codepen.io/'))
 		host = 'https://www.codepen.io/';
 	else if(url.startsWith('https://codepen.io/'))
-		host = 'https://codepen.io/'
+		host = 'https://codepen.io/';
 	
 	penDetails = url.replace(host, '');
 
@@ -26,7 +26,7 @@ module.exports = getCodepen = (url, options) => {
 
 	let penOwner = penOwnerArr.join('');
 
-	for(let i = 0; i <= penOwnerOwnerArr.length; i ++) {
+	for(let i = 0; i <= penOwnerArr.length; i ++) {
 		penDetailsArr.shift();
 	}
 

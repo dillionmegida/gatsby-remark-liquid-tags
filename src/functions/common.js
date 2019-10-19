@@ -77,7 +77,7 @@ let breakLiquidTag = tag => {
 			}
 		}
 
-		// Changes the array to a string
+		// Changes the array to a string if it has values
 		tagOpt = tagOptArr.join('');
 
 		// Delete the tag options array contents and the extra space from the new tag array

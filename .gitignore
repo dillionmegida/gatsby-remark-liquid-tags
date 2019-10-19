@@ -1,3 +1,7 @@
 node_modules/
 
 package-lock.json
+
+# Haven't done them yet
+src/embeds/twitter.js
+src/embeds/github.js

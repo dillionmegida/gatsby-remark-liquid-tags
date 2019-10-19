@@ -4,12 +4,11 @@ const toString = require("mdast-util-to-string")
 const commonFunctions = require('./functions/common');
 
 const getCodepen = require('./embeds/codepen');
-const getTwitter = require('./embeds/twitter');
-const getTwitter = require('./embeds/youtube');
+const getYoutube = require('./embeds/youtube');
 
 let { breakLiquidTag } = commonFunctions;
 
-module.exports = ({ markdownAST }, pluginOptions) => {
+module.exports = ({ markdownAST }) => {
   visit(markdownAST, "paragraph", node => {
 
     // Grab the innerText of the heading node
@@ -26,19 +25,14 @@ module.exports = ({ markdownAST }, pluginOptions) => {
 
         let embed;
 
-        // check the tagname to know which embed is to be used
+        // check the tagname to know which embed is to be used  
         switch(tagName) {
             case 'codepen':
                 embed = getCodepen(tagUrl, tagOpt);
                 break;
-            case 'twitter':
-                embed = getTwitter(tagUrl);
-                break;
             case 'youtube':
                 embed = getYoutube(tagUrl);
                 break;
-            // case 'github':
-            //     embed = getYoutube(tagUrl);
             default:
                 return;
         }
