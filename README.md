@@ -55,5 +55,8 @@ Ensure you have some markdown files to work with
 - Make your changes in development mode
 - Push and make a pull request.
 
+### Author
+[Dillion Megida](https://dillionmegida.com/about)
+
 ### License
 MIT
