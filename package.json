@@ -2,7 +2,7 @@
 	"name": "gatsby-remark-liquid-tags",
 	"description": "A template plugin for custom embeds of services by url",
 	"main": "./src/index.js",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"keywords": [
 		"gatsby",
 		"gatsby-plugin",
