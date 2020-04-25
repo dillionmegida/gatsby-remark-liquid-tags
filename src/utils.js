@@ -15,8 +15,22 @@ const breakLiquidTag = (tag) => {
 
 	return {
 		tagName,
-        tagOptions,
+		tagOptions,
 	};
 };
 
-module.exports = { breakLiquidTag };
+const checkURL = (url) => {
+	let verfiedURL = "";
+
+	if (url.startsWith("https://www" || url.startsWith("https://")))
+		verfiedURL = url;
+	// URL is in bad format
+	else return;
+
+    // remove trailing slash
+    verifiedURL = url.replace(/\/{1,}$/, "");
+    
+    return verfiedURL;
+};
+
+module.exports = { breakLiquidTag, checkURL };
