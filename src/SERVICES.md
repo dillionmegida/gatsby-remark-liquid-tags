@@ -23,8 +23,8 @@
 
 ## youtube
 
-- `hash`: of the video. Usually found at the end of the url. e.g the url 'https://www.youtube.com/watch?v=U9VF-4euyRoJJ' has the hash **U9VF-4euyRoJJ**
-- Example: {% youtube U9VF-4euyRoJJ %}
+- `hash`: of the video. Usually found at the end of the url. e.g the url 'https://www.youtube.com/watch?v=U9VF-4euyRo' has the hash **U9VF-4euyRo**
+- Example: {% youtube U9VF-4euyRo %}
 
 ## google-slides
 
