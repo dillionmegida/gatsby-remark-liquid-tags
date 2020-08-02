@@ -55,13 +55,11 @@ module.exports = ({ markdownAST }) => {
 					break;
 			}
 
-			if (embed === undefined) return text;
+			if (embed === undefined) return;
 
 			node.type = "html";
 			node.children = undefined;
 			node.value = text.replace(exp, embed);
 		}
 	});
-
-	return markdownAST;
 };
