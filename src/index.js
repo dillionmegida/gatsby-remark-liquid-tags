@@ -62,4 +62,6 @@ module.exports = ({ markdownAST }) => {
 			node.value = text.replace(exp, embed);
 		}
 	});
+	
+	return markdownAST;
 };
