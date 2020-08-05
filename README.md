@@ -48,7 +48,7 @@ Please check out this file: [SERVICES.md](./src/SERVICES.md) to see an example o
 
 Contributions are highly welcome: [Feature requests](https://github.com/dillionmegida/gatsby-remark-liquid-tags/issues/new/choose), [Pull requests](https://github.com/dillionmegida/gatsby-remark-liquid-tags/pulls), [Bug report](https://github.com/dillionmegida/gatsby-remark-liquid-tags/issues/new/choose), documentation fixes and so on.
 
-If you'd like to add more embeds, you can get insights from the [Dev.to Liquid tags page](https://docs.dev.to/frontend/liquid-tags/)
+If you'd like to add more embeds, you can get insights from the [Dev.to Liquid tags page](https://dev.to/p/editor_guide#liquidtags)
 
 If you'd like to create a pull request, kindly go through the documentation here - [CONTRIBUTION.md](CONTRIBUTION.md) to help you get started.
 
