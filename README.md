@@ -40,6 +40,16 @@ plugins: [
 2. Use them in markdowns with this syntax - `{% embed-service embed-options %}`
    The embed-options argument may contain the url or other options as required by the tag.
 
+**Note that** the liquid tags must have a line space above and below. This helps the plugin capture the tags correctly. Here's what I mean:
+
+```md
+Check out this codepen:
+
+{% codepen https://codepen.io/Dillion/pen/GRKLJBP tab=html,css %}
+
+The codepen shows the online text editor I created.
+```
+
 ### Examples
 
 Please check out this file: [SERVICES.md](./src/SERVICES.md) to see an example of each of the services available.
