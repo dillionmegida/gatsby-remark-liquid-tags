@@ -20,17 +20,11 @@ const breakLiquidTag = (tag) => {
 };
 
 const checkURL = (url) => {
-	let verfiedURL = "";
+  return url.startsWith("https://") ? removeTrailingSlash(url) : null;
+};
 
-	if (url.startsWith("https://www" || url.startsWith("https://")))
-		verfiedURL = url;
-	// URL is in bad format
-	else return;
-
-    // remove trailing slash
-    verifiedURL = url.replace(/\/{1,}$/, "");
-    
-    return verfiedURL;
+const removeTrailingSlash = (url) => {
+  return url.replace(/\/+$/, "");
 };
 
 module.exports = { breakLiquidTag, checkURL };
