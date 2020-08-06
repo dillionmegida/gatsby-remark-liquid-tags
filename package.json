@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-liquid-tags",
-  "version": "0.0.0-semantically-released",
+  "version": "1.1.6",
   "description": "A gatsby plugin for custom embeds of services with liquid tags",
   "main": "./index.js",
   "scripts": {
